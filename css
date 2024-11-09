@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Livros Online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display
+=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-
+bundle.min.css">
+
+<link rel="stylesheet" href="styles.css"> <!-- Defina seu CSS aqui -->
+</head>
+<body>
+
+<!-- Cabeçalho com navegação -->
+<header class="header">
+<div class="container">
+<img src="img/logo.svg" alt="Logo" class="logo">
+<nav class="nav">
+<a href="#">Início</a>
+<a href="#">Categorias</a>
+<a href="#">Favoritos</a>
+<a href="#">Carrinho</a>
+<a href="#">Perfil</a>
+</nav>
+</div>
+
+</header>
+
+<!-- Seção de banner -->
+<section class="banner">
+<h1>Descubra o próximo livro favorito</h1>
+<p>Explore nossa coleção de livros e encontre o que você precisa para seu
+desenvolvimento pessoal e profissional.</p>
+<input type="search" placeholder="Pesquisar livros...">
+</section>
+
+<!-- Carrossel de novos lançamentos -->
+<section class="carousel">
+<h2>Novos Lançamentos</h2>
+<div class="swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><img src="img/livro1.jpg" alt="Livro 1"></div>
+<div class="swiper-slide"><img src="img/livro2.jpg" alt="Livro 2"></div>
+<div class="swiper-slide"><img src="img/livro3.jpg" alt="Livro 3"></div>
+<!-- Adicione mais slides conforme necessário -->
+</div>
+<!-- Botões de navegação do Swiper -->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+</section>
+
+<!-- Tópicos Populares -->
+<section class="topics">
+
+<h2>Tópicos Populares</h2>
+<ul>
+<li><a href="#">Programação</a></li>
+<li><a href="#">Front-end</a></li>
+<li><a href="#">UX & Design</a></li>
+<li><a href="#">Negócios</a></li>
+<li><a href="#">Data Science</a></li>
+</ul>
+</section>
+
+<!-- Scripts do Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper-container', {
+slidesPerView: 3,
+spaceBetween: 10,
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+});
+</script>
+</body>
+</html>
